@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <h2>TOP HEADING</h2>
+    <div class="row">
+        <div *ngFor="let i of topHeadingDisplay" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{ i.urlToImage }}" alt="" width="100%">
+                <h5 class="mt-2 mb-2">{{ i.title }}</h5>
+                <!-- <p>{{ i.description }}</p> -->
+                <a href="{{ i.url }}" class="btn btn-dark btn-sm mt-5">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
